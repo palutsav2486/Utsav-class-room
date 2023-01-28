@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+.container {
+position:relative;
+width: 50%;    
+}
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Fade in Overlay</h2>
+<p>Hover over the image to see the effect.</p>
+
+<div class="container">
+  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACHCAMAAAALObo4AAABIFBMVEX////7vARChfTqQzU0qFP7twAlevMSoTz0paXoJhP93KWkwfml0qr7ugA9g/Q3gPT98vL947PqPS78wwAnpUztaWDpOCjxkYv0r6v+6cP7wETsVk7/+e//+/X81Yr4zswzqj680PuQs/jt8v7yn5rtY1nwd3b2v7374N/pMyHudG73x8X2uLfoFgDtZmTrTkHxiYb+9eL8z237yUr+7tD8yWL7wCn91n7rSUf8xlH915T+7b7zmHv0kV3zhyrpMzf6gw3zPRT0SCn0UTX8v7Tiz4rKxG+mtD+ktimjjG+cX6idZqOfdKujjcSkndSis+3p9vG+48+ExpdDsmsklqtvvodak/VqundCnKhZp6l7p/d5uKnU6dbM3PwAcPNsnfZ7Hni5AAADz0lEQVR4nO3Y+VPaQBQH8A0JieFKiRjKWQGtRmsVRay97WVbe4BoaC2U//+/6BIROXbJxnlmM539zjj+yGfevt19G4RERERERERERERERO4la4X1lcfZjc0HfBnbumVZtm2ZW0ubPB1Lunwdy5azHCVjB46tZ7mtzqQDSwrboXDIpv4kFA5Z3smGwyHba+FwyDsb4XDI+qNwOMxC8NuX5JD14FuE6JB3Ai8I2WEFvnnJDtkMuiAUh/4wHA7raTgc8m7AMwDNYQd88VIdATcIzWHtgf9UPRfbP8jn8wfldKPI6jALsIhi7LCZTCYlCf/h//mjRonN8QxUUR4SJoMp6aAdpXJ0RuEmmswF6mjkowSFKymP+4TqWIFipInFGEGO6x4OsJuuTCvGqE0aix020NxephfjGtJsLHSYMLNhemE1riH1BQ6g0TDnyRhCFjhgjtNi3puBm/U53QEzsh95NMcNpE51gCxLg2FV3JU5ps7JIE8pxnJgSI7sMGUIRr3JyJCkQ8r7BWQIijEuy7AgReK7EmSzlA5ZlwV36guCw1oHOTt8LIuUPJp3mBbMiJxmL4ckHazNOiyoSd3rZpl2vLRnGVAfHfb9OJqvzOkWhXtQ+mhTSVp+/WayGJAfHO7ssKwVyEfc8Z0ctm5vwX6Oeh5lDX5HLL/VT05O3r3f3fsA/aWhlI4x5eOn09PTz1++np19+/7jZ5wlFWAqarXPO52OoijahZHCURkTB1X0LjNaRnGzeqFG2GM4kIpuZoRwHYYfxwCOkdBuFdjxi4+jpWjKZFZ/p/w4roAYPSUzxVC0Pz4YEaN6TwxFSzg+CpKC2bitzCwDO6p+GqQGwujMMbCjwr5xjQGI41ybY2BHjd0Bc4y1CQzsQFfsDQJSjrkeHTn6rA6Y3UIsx9CBBoydqkKUo9QhMVxHn61DYMrRI5bDdaA4CyTlwGwWUneMHCjCsDJqH4JBOjtuHTVviApzlPbIjJED9b0gUDdLgtweNw7UNxZCVCAGrT3GDlRz6M1qAC0KTtfLgWpVlXKgGQ5Ii7ohHqZTjmGTkEpi/K2CbFh2B0IVxzAmi5Iy1BSkgtWBa1J1Iob7lEgZhuEM4qAKhCjHx5wD90m/Uh04EWdwFe8DI3AumR33m0RIHO2QOFpkRuAO2kEWuINywQTuaIWkHpSbLnhHizonBxzSM4qHgzgacnAQR3YeDtJTiouDsGf4OOZ7lZNj5isdPwfqTe8abg7UOp8sCT/HUKKMKTwdeHESXSXjRmvzdCD3S/9lt9vhWg4RERERERERERGR/zn/AB1ReaIEPpytAAAAAElFTkSuQmCC" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">UTSAV</div>
+  </div>
+</div>
+
+</body>
+</html>
